@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subway Cars</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src = "script.js"></script>
+
+    <style>
+        #magPower {
+            position: absolute;
+            top: 250px; /* Adjust as needed */
+            left: 175px; /* Adjust as needed */
+        }
+
+        #boost{
+            position: absolute;
+            top: 250px; /* Adjust as needed */
+            left: 450px; /* Adjust as needed */
+        }
+
+        #shield{
+            position: absolute;
+            top: 250px; /* Adjust as needed */
+            left: 712px; /* Adjust as needed */
+        }
+
+        #multiply{
+            position: absolute;
+            top: 470px; /* Adjust as needed */
+            left: 442px; /* Adjust as needed */
+        }
+
+    </style>
+</head>
+
+<body onload = "initialize()">
+<canvas id="canvas" width="1000" height="600"></canvas>
+<input id="magPower" type="button" onclick="magPower()" value="Magnet:25 Coins" hidden="hidden">
+<input id="boost" type="button" onclick="booster()" value="Boost: 30 Coins" hidden="hidden">
+<input id="shield" type="button" onclick="shielder()" value="Shield: 20 Coins" hidden="hidden">
+<input id="multiply" type="button" onclick="multiplier()" value="Multiplier: 30 Coins" hidden="hidden">
+
+
+
+<input id="reset" type="button" onclick="reset()" value="Play Again" disabled>
+<input id="store" type="button" onclick="store()" value="store" disabled>
+<p id="score"></p>
+
+
+
+</body>
+</html>
